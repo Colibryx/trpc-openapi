@@ -1,8 +1,8 @@
 {
-  "name": "trpc-openapi",
-  "version": "1.2.0",
+  "name": "@colibryx/trpc-openapi",
+  "version": "1.2.4",
   "description": "tRPC OpenAPI",
-  "author": "James Berry <jb@jamesbe.com>",
+  "author": "Francesco Masaia <francesco.masaia@colibryx.com>",
   "private": false,
   "license": "MIT",
   "keywords": [
@@ -10,9 +10,12 @@
     "openapi",
     "swagger"
   ],
-  "homepage": "https://github.com/jlalmes/trpc-openapi",
-  "repository": "github:jlalmes/trpc-openapi",
-  "bugs": "https://github.com/jlalmes/trpc-openapi/issues",
+  "publishConfig": {
+    "access": "public"
+  },
+  "homepage": "https://github.com/colibryx/trpc-openapi",
+  "repository": "github:colibryx/trpc-openapi",
+  "bugs": "https://github.com/colibryx/trpc-openapi/issues",
   "main": "dist/index.js",
   "typings": "dist/index.d.ts",
   "workspaces": [
@@ -29,7 +32,7 @@
     "build": "rimraf dist && tsc -p tsconfig.build.json"
   },
   "peerDependencies": {
-    "@trpc/server": "^10.0.0",
+    "@trpc/server": "^10.45.0",
     "zod": "^3.14.4"
   },
   "dependencies": {
